@@ -8,7 +8,7 @@ import requests
 
 from .data import DataPoint
 
-_API_URL = 'https://api.darksky.net/forecast'
+_API_URL = 'https://api.pirateweather.net/forecast'
 
 
 class Forecast(DataPoint):
@@ -52,6 +52,6 @@ class Forecast(DataPoint):
 
         response = requests.get(self.url, **request_params)
         self.response_headers = response.headers
-        if response.status_code is not 200:
+        if response.status_code != 200:
             raise requests.exceptions.HTTPError('Bad response')
         return super().__init__(json.loads(response.text))

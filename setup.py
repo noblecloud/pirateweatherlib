@@ -5,13 +5,12 @@ from setuptools import setup
 with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'README.rst')) as f:
     README = f.read()
 
-setup(name='darkskylib',
-      version='0.3.91',
-      description='The Dark Sky API wrapper',
+setup(name='pirateweatherlib',
+      version='0.4.0',
+      description='A Pirate Weather API wrapper',
       long_description=README,
-      url='https://github.com/lukaskubis/darkskylib',
-      author='Lukas Kubis',
-      author_email='contact@lukaskubis.com',
+      url='https://github.com/noblecloud/pirateweatherlib',
+      author='Lukas Kubis and adapted for Pirate Weather by noblecloud',
       license='MIT',
       classifiers=[
           'Development Status :: 4 - Beta',
@@ -29,8 +28,8 @@ setup(name='darkskylib',
           'Programming Language :: Python :: 3.7',
           'Operating System :: OS Independent',
       ],
-      keywords='darksky dark-sky dark sky forecast home weather home-weather weather-station',
-      packages=['darksky'],
+      keywords='pirateweather pirate-weather pirate forecast home weather home-weather weather-station',
+      packages=['pirateweather'],
       install_requires=[
           'future',
           'requests',

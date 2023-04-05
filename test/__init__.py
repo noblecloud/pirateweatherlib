@@ -2,7 +2,7 @@ import os
 import pickle
 import unittest
 
-import darksky
+import pirateweather
 import requests
 
 
@@ -32,7 +32,7 @@ class TestPickle(unittest.TestCase):
         location = -77.843906, 166.686520  # McMurdo station, antarctica
 
         # This doesn't actually hit the API since we mocked out the request lib
-        forecast = darksky.forecast('test_key', *location)
+        forecast = pirateweather.forecast('test_key', *location)
 
         # Make sure we got the right data, via our mock
         self.assertEqual(forecast.currently.temperature, -23.58)

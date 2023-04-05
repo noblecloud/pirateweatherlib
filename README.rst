@@ -1,15 +1,15 @@
-darkskylib
+pirateweatherlib
 ==========
 
-This  library for the `Dark Sky
-API <https://darksky.net/dev/docs>`__ provides access to detailed
+This  library for the `Pirate Weather
+API <http://pirateweather.net/en/latest/API/>`__ provides access to detailed
 weather information from around the globe.
 
 Quick start
 -----------
 
 Before you start using this library, you need to get your API key
-`here <https://darksky.net/dev/register>`__.
+`here <https://pirate-weather.apiable.io/>`__.
 
 
 API Calls
@@ -20,7 +20,7 @@ Function ``forecast`` handles all request parameters and returns a
 
 .. code:: python
 
-    >>> from darksky import forecast
+    >>> from pirateweather import forecast
     >>> boston = forecast(key, 42.3601, -71.0589)
     >>>
 
@@ -148,7 +148,7 @@ Example script
 
 .. code:: python
 
-    from darksky import forecast
+    from pirateweather import forecast
     from datetime import date, timedelta
 
     BOSTON = 42.3601, 71.0589
@@ -184,4 +184,4 @@ License
 -------
 
 The code is available under terms of `MIT
-License <https://raw.githubusercontent.com/lukaskubis/darkskylib/master/LICENSE>`__
+License <https://raw.githubusercontent.com/noblecloud/pirateweatherlib/master/LICENSE>`__
