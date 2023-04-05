@@ -2,7 +2,7 @@ import os
 import pickle
 import unittest
 
-import pirateweather
+from src import pirateweather
 import requests
 
 
