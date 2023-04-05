@@ -5,6 +5,8 @@ This  library for the `Pirate Weather
 API <http://pirateweather.net/en/latest/API/>`__ provides access to detailed
 weather information from around the globe.
 
+It has been adapted from `darkskylib <https://github.com/lukaskubis/darkskylib>`__.
+
 Quick start
 -----------
 
